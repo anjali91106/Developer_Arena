@@ -1,4 +1,4 @@
-# John Smith - Web Developer Portfolio
+# Anjali Soni - Web Developer Portfolio
 
 A professional, semantic HTML5 portfolio website showcasing my journey as a beginner web developer. This project demonstrates my understanding of HTML5 fundamentals, semantic markup, and web accessibility best practices.
 
@@ -83,9 +83,9 @@ As I progress in my learning journey, I plan to add:
 
 ## 🤝 Connect
 
-- **GitHub**: [github.com/johnsmith](https://github.com/johnsmith)
-- **LinkedIn**: [linkedin.com/in/johnsmith](https://linkedin.com/in/johnsmith)
-- **Email**: john.smith@example.com
+- **GitHub**: [github.com/Anjalisoni](https://github.com/Anjalisoni)
+- **LinkedIn**: [linkedin.com/in/Anjalisoni](https://linkedin.com/in/Anjalisoni)
+- **Email**: anjali.smith@example.com
 
 ## 📄 License
 
