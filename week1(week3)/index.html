@@ -8,6 +8,7 @@
     <meta name="author" content="Anjali Soni">
     <title>Anjali Soni - Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section with Navigation -->
@@ -25,6 +26,7 @@
                     <li><a href="#skills-section">Skills</a></li>
                     <li><a href="#projects-section">Projects</a></li>
                     <li><a href="#contact-section">Contact</a></li>
+                    <li><button id="dark-mode-toggle" class="dark-mode-btn" title="Toggle Dark Mode">🌙</button></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +39,7 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <img src="../images/profile-pic.jpg" alt="Anjali Soni - Professional headshot" class="profile-image">
+                    <img src="./images/profile-pic.jpg" alt="Anjali Soni - Professional headshot" class="profile-image">
                     <div class="about-text">
                         <p>
                             I'm a passionate beginner web developer currently mastering the fundamentals of HTML, CSS, and JavaScript. 
@@ -144,6 +146,7 @@
                     </div>
                     
                     <button type="submit">Send Message</button>
+                    <div id="form-message" class="form-message"></div>
                 </form>
                 
                 <div class="social-links">
@@ -153,6 +156,50 @@
                         <li><a href="#" target="_blank">LinkedIn</a></li>
                         <li><a href="#">Email</a></li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Todo List Section -->
+        <section id="todo-section" class="todo-section">
+            <div class="container">
+                <h2>Task Manager</h2>
+                <div class="todo-container">
+                    <div class="todo-input-group">
+                        <input type="text" id="todo-input" placeholder="Enter a new task..." maxlength="100">
+                        <button id="add-todo-btn">Add Task</button>
+                    </div>
+                    <ul id="todo-list" class="todo-list"></ul>
+                    <div class="todo-stats">
+                        <span id="todo-count">0 tasks</span>
+                        <button id="clear-completed" class="clear-btn">Clear Completed</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider Section -->
+        <section id="slider-section" class="slider-section">
+            <div class="container">
+                <h2>Project Gallery</h2>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="./images/project1.jpg" alt="Recipe Collection Website">
+                            <div class="slide-caption">Data Entry It Service Website</div>
+                        </div>
+                        <div class="slide">
+                            <img src="./images/project2.jpg" alt="Personal Task Manager">
+                            <div class="slide-caption">webdesign for IT Service</div>
+                        </div>
+                        <div class="slide">
+                            <img src="./images/project3.jpg" alt="Portfolio Website">
+                            <div class="slide-caption">Responsive Figma / Canva Webdesign</div>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn" id="prev-slide">❮</button>
+                    <button class="slider-btn next-btn" id="next-slide">❯</button>
+                    <div class="slider-dots" id="slider-dots"></div>
                 </div>
             </div>
         </section>
