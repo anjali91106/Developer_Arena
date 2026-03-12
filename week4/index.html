@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechHub - Latest technology news, reviews, and insights">
+    <meta name="keywords" content="technology, news, blog, reviews, tech insights">
+    <meta name="author" content="TechHub Team">
+    <title>TechHub - Technology News & Insights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">TechHub</a></h1>
+                    <p class="tagline">Technology News & Insights</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="./pages/about.html" class="nav-link">About</a></li>
+                        <li><a href="./pages/services.html" class="nav-link">Services</a></li>
+                        <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="./pages/community-blogs.html" class="nav-link">Community</a></li>
+                        <li><button id="search-toggle" class="search-btn" aria-label="Toggle search">🔍</button></li>
+                    </ul>
+                    <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <form class="search-form" id="search-form">
+                    <input type="search" id="search-input" placeholder="Search articles..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">×</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="./pages/about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="./pages/services.html" class="mobile-nav-link">Services</a></li>
+                <li><a href="./pages/contact.html" class="mobile-nav-link">Contact</a></li>
+                <li><a href="./pages/community-blogs.html" class="mobile-nav-link">Community</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Latest Technology News & Insights</h1>
+                    <p>Stay updated with the latest trends, reviews, and breakthroughs in technology</p>
+                    <a href="#featured" class="cta-button">Explore Articles</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/heroien-tech.jpg" alt="Technology hero image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Articles</h2>
+            <div class="featured-grid">
+                <article class="featured-card main">
+                    <div class="card-image">
+                        <img src="images/the future of ai.png" alt="Artificial Intelligence" loading="lazy">
+                        <span class="category-tag">Artificial Intelligence</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Future of AI: What to Expect in 2024</h3>
+                        <p class="card-excerpt">Artificial Intelligence continues to reshape our world. Explore the latest developments and predictions for AI in 2024...</p>
+                        <div class="card-meta">
+                            <span class="author">By Sarah Johnson</span>
+                            <span class="date">March 10, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="pages/article-ai-future.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <div class="featured-sidebar">
+                    <article class="featured-card small">
+                        <div class="card-image">
+                            <img src="images/cybersecurity.jpg" alt="Cybersecurity" loading="lazy">
+                            <span class="category-tag">Security</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Cybersecurity Trends for 2024</h3>
+                            <p>Essential security measures every business should implement...</p>
+                            <div class="card-meta">
+                                <span class="date">March 9, 2024</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
+                            <a href="pages/article-cybersecurity-trends.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="featured-card small">
+                        <div class="card-image">
+                            <img src="images/modern web development tools.png" alt="Web Development" loading="lazy">
+                            <span class="category-tag">Development</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modern Web Development Tools</h3>
+                            <p>Latest tools and frameworks revolutionizing web development...</p>
+                            <div class="card-meta">
+                                <span class="date">March 8, 2024</span>
+                                <span class="read-time">4 min read</span>
+                            </div>
+                            <a href="pages/article-modern-web-tools.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="latest-articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="ai">AI & ML</button>
+                <button class="filter-btn" data-category="security">Security</button>
+                <button class="filter-btn" data-category="development">Development</button>
+                <button class="filter-btn" data-category="mobile">Mobile</button>
+            </div>
+
+            <div class="articles-grid" id="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="ai">
+                    <div class="card-image">
+                        <img src="images/understanding-the-basics-of-ai-and-machine-learning-thumbnail.webp" alt="Machine Learning" loading="lazy">
+                        <span class="category-tag">AI & ML</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Understanding Machine Learning Basics</h3>
+                        <p class="card-excerpt">A comprehensive guide to machine learning fundamentals for beginners...</p>
+                        <div class="card-meta">
+                            <span class="author">By Mike Chen</span>
+                            <span class="date">March 7, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <a href="pages/article-machine-learning.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="security">
+                    <div class="card-image">
+                        <img src="images/data privacy.webp" alt="Data Protection" loading="lazy">
+                        <span class="category-tag">Security</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Data Protection Best Practices</h3>
+                        <p class="card-excerpt">How to protect your sensitive data in an increasingly digital world...</p>
+                        <div class="card-meta">
+                            <span class="author">By Lisa Park</span>
+                            <span class="date">March 6, 2024</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <a href="pages/article-data-protection.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="development">
+                    <div class="card-image">
+                        <img src="images/react18.jpg" alt="React Development" loading="lazy">
+                        <span class="category-tag">Development</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>React 18: New Features Guide</h3>
+                        <p class="card-excerpt">Explore the latest features and improvements in React 18...</p>
+                        <div class="card-meta">
+                            <span class="author">By Alex Turner</span>
+                            <span class="date">March 5, 2024</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <a href="pages/article-react-development.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="mobile">
+                    <div class="card-image">
+                        <img src="images/mobile-app-development-trend.jpg" alt="Mobile Apps" loading="lazy">
+                        <span class="category-tag">Mobile</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mobile App Development Trends 2024</h3>
+                        <p class="card-excerpt">Latest trends shaping the future of mobile application development...</p>
+                        <div class="card-meta">
+                            <span class="author">By Emma Wilson</span>
+                            <span class="date">March 4, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="pages/article-mobile-trends.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="ai">
+                    <div class="card-image">
+                        <img src="images/chatgpt.webp" alt="ChatGPT" loading="lazy">
+                        <span class="category-tag">AI & ML</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>ChatGPT in Business Applications</h3>
+                        <p class="card-excerpt">How businesses are leveraging ChatGPT for customer service and automation...</p>
+                        <div class="card-meta">
+                            <span class="author">By David Kim</span>
+                            <span class="date">March 3, 2024</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <a href="pages/article-chatgpt-business.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="development">
+                    <div class="card-image">
+                        <img src="images/Cloud-Computing-Architecture-Importance.webp" alt="Cloud Computing" loading="lazy">
+                        <span class="category-tag">Development</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cloud Computing Architecture Guide</h3>
+                        <p class="card-excerpt">Understanding modern cloud computing architectures and best practices...</p>
+                        <div class="card-meta">
+                            <span class="author">By Rachel Green</span>
+                            <span class="date">March 2, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <a href="pages/article-cloud-computing.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="load-more" class="load-more-btn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h2 class="section-title">Community Contributions</h2>
+            <div class="community-intro">
+                <p>Discover insights and tutorials from our amazing community members</p>
+                <a href="./pages/community-blogs.html" class="cta-button">View All Community Blogs</a>
+            </div>
+            <div class="community-grid" id="community-grid">
+                <!-- Community blogs will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest tech news and insights delivered to your inbox weekly</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <div id="newsletter-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechHub</h3>
+                    <p>Your trusted source for technology news, reviews, and insights.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <style>
+        .community-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        
+        .community-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .community-intro p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .community-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .community-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .community-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .community-author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .community-author-info {
+            flex: 1;
+        }
+        
+        .community-author-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .community-meta {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .community-category {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .community-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .community-excerpt {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .community-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // Load community blogs on homepage
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCommunityBlogs();
+        });
+
+        function loadCommunityBlogs() {
+            const sampleCommunityBlogs = [
+                {
+                    title: "Getting Started with Machine Learning",
+                    author: "Alex Johnson",
+                    category: "AI",
+                    contentType: "Tutorial",
+                    excerpt: "A comprehensive guide to machine learning fundamentals for beginners...",
+                    submittedAt: new Date('2024-01-15').toISOString(),
+                    likes: 42,
+                    views: 1250
+                },
+                {
+                    title: "Web Development Trends for 2024",
+                    author: "Sarah Chen",
+                    category: "Web Dev",
+                    contentType: "Blog",
+                    excerpt: "Exploring the latest trends and technologies shaping web development...",
+                    submittedAt: new Date('2024-01-12').toISOString(),
+                    likes: 38,
+                    views: 980
+                },
+                {
+                    title: "Cybersecurity Best Practices",
+                    author: "Mike Rodriguez",
+                    category: "Security",
+                    contentType: "Tutorial",
+                    excerpt: "Essential security practices for modern web applications...",
+                    submittedAt: new Date('2024-01-10').toISOString(),
+                    likes: 56,
+                    views: 1450
+                }
+            ];
+
+            // Load from localStorage if available
+            const storedSubmissions = localStorage.getItem('blogSubmissions');
+            let communityBlogs = [...sampleCommunityBlogs];
+            
+            if (storedSubmissions) {
+                const submissions = JSON.parse(storedSubmissions);
+                const approvedBlogs = submissions.filter(blog => blog.status === 'approved');
+                communityBlogs = [...sampleCommunityBlogs, ...approvedBlogs];
+            }
+
+            // Sort by date (newest first) and take only 3 for homepage
+            communityBlogs.sort((a, b) => new Date(b.submittedAt) - new Date(a.submittedAt));
+            const latestBlogs = communityBlogs.slice(0, 3);
+
+            renderCommunityBlogs(latestBlogs);
+        }
+
+        function renderCommunityBlogs(blogs) {
+            const communityGrid = document.getElementById('community-grid');
+            
+            if (blogs.length === 0) {
+                communityGrid.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <h3>No community blogs yet</h3>
+                        <p>Be the first to share your tech insights!</p>
+                        <a href="./pages/submit-blog.html" class="cta-button">Submit Your Blog</a>
+                    </div>
+                `;
+                return;
+            }
+
+            communityGrid.innerHTML = blogs.map(blog => createCommunityCard(blog)).join('');
+        }
+
+        function createCommunityCard(blog) {
+            const initials = getAuthorInitials(blog.author);
+            const formattedDate = formatDate(blog.submittedAt);
+            
+            return `
+                <div class="community-card" onclick="window.location.href='./pages/community-blogs.html'">
+                    <div class="community-card-header">
+                        <div class="community-author-avatar">${initials}</div>
+                        <div class="community-author-info">
+                            <div class="community-author-name">${blog.author}</div>
+                            <div class="community-meta">${formattedDate} • ${blog.contentType}</div>
+                        </div>
+                        <span class="community-category">${blog.category}</span>
+                    </div>
+                    <h3 class="community-title">${blog.title}</h3>
+                    <p class="community-excerpt">${blog.excerpt}</p>
+                    <div class="community-stats">
+                        <span>👁️ ${blog.views}</span>
+                        <span>❤️ ${blog.likes}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getAuthorInitials(name) {
+            return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffTime = Math.abs(now - date);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays === 1) return 'Yesterday';
+            if (diffDays < 7) return `${diffDays} days ago`;
+            if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
+            return date.toLocaleDateString();
+        }
+    </script>
+</body>
+</html>

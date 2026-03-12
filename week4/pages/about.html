@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About TechHub - Our mission, team, and commitment to quality technology news">
+    <meta name="keywords" content="about, techhub, team, mission, technology news">
+    <meta name="author" content="TechHub Team">
+    <title>About Us - TechHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="../index.html">TechHub</a></h1>
+                    <p class="tagline">Technology News & Insights</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link active">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="./community-blogs.html" class="nav-link">Community</a></li>
+                        <li><button id="search-toggle" class="search-btn" aria-label="Toggle search">🔍</button></li>
+                    </ul>
+                    <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <form class="search-form" id="search-form">
+                    <input type="search" id="search-input" placeholder="Search articles..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">×</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="./about.html" class="mobile-nav-link active">About</a></li>
+                <li><a href="./services.html" class="mobile-nav-link">Services</a></li>
+                <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+                <li><a href="./community-blogs.html" class="mobile-nav-link">Community</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>About TechHub</h1>
+            <p>Our mission to deliver quality technology news and insights</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>At TechHub, we believe in making technology accessible and understandable for everyone. Our mission is to provide accurate, timely, and insightful technology news that helps our readers stay informed and make better decisions in an increasingly digital world.</p>
+                    <p>We bridge the gap between complex technical concepts and everyday understanding, making technology news engaging and relevant to both tech enthusiasts and casual readers.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="../images/cybersecurity.jpg" alt="Our Mission" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Accuracy</h3>
+                    <p>We prioritize factual accuracy and thorough verification in all our content, ensuring our readers receive reliable information they can trust.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3>Innovation</h3>
+                    <p>We constantly explore new ways to present technology news, embracing innovative storytelling and cutting-edge delivery methods.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h3>Accessibility</h3>
+                    <p>We make complex technology topics accessible to everyone, regardless of their technical background or expertise.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>We foster a community of tech enthusiasts, encouraging discussion, learning, and knowledge sharing among our readers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/f3.jpg" alt="Sarah Johnson" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="member-role">Editor-in-Chief</p>
+                        <p class="member-bio">Sarah leads our editorial team with over 10 years of experience in technology journalism and a passion for making tech accessible.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="Sarah's Twitter">🐦</a>
+                            <a href="#" aria-label="Sarah's LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/m5.webp" alt="Mike Chen" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mike Chen</h3>
+                        <p class="member-role">Senior Tech Writer</p>
+                        <p class="member-bio">Mike specializes in AI and machine learning, breaking down complex topics into understandable insights for our readers.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="Mike's Twitter">🐦</a>
+                            <a href="#" aria-label="Mike's LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/f5.jpg" alt="Lisa Park" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Lisa Park</h3>
+                        <p class="member-role">Cybersecurity Expert</p>
+                        <p class="member-bio">Lisa brings her expertise in cybersecurity to help readers understand digital threats and protection strategies.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="Lisa's Twitter">🐦</a>
+                            <a href="#" aria-label="Lisa's LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/m4.jpg" alt="Alex Turner" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Turner</h3>
+                        <p class="member-role">Web Development Specialist</p>
+                        <p class="member-bio">Alex covers the latest in web development, from frameworks to best practices, helping developers stay current.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="Alex's Twitter">🐦</a>
+                            <a href="#" aria-label="Alex's LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1500000">0</div>
+                    <div class="stat-label">Monthly Readers</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Articles Published</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Expert Contributors</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Reader Satisfaction %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>TechHub Founded</h3>
+                        <p>Started with a simple mission to make technology news accessible to everyone.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Team Expansion</h3>
+                        <p>Grew our team to include expert writers from various technology fields.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>1 Million Readers</h3>
+                        <p>Reached our first million monthly readers, expanding our global reach.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Mobile App Launch</h3>
+                        <p>Launched our mobile application to provide better on-the-go access to our content.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>AI Integration</h3>
+                        <p>Integrated AI-powered personalization to enhance reader experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechHub</h3>
+                    <p>Your trusted source for technology news, reviews, and insights.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>

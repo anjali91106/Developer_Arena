@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechHub Services - Technology consulting, content creation, and digital solutions">
+    <meta name="keywords" content="services, tech consulting, content creation, digital solutions">
+    <meta name="author" content="TechHub Team">
+    <title>Services - TechHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="../index.html">TechHub</a></h1>
+                    <p class="tagline">Technology News & Insights</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="./about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link active">Services</a></li>
+                        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="./community-blogs.html" class="nav-link">Community</a></li>
+                        <li><button id="search-toggle" class="search-btn" aria-label="Toggle search">🔍</button></li>
+                    </ul>
+                    <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Search Bar (Hidden by default) -->
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <form class="search-form" id="search-form">
+                    <input type="search" id="search-input" placeholder="Search articles..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">×</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="../index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="./services.html" class="mobile-nav-link active">Services</a></li>
+                <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+                <li><a href="./community-blogs.html" class="mobile-nav-link">Community</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive technology solutions for your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Empowering Your Digital Journey</h2>
+                    <p>At TechHub, we offer a comprehensive range of services designed to help businesses leverage technology effectively. From consulting to content creation, our expert team is here to support your digital transformation.</p>
+                    <p>Whether you're a startup looking to establish your digital presence or an established enterprise seeking to optimize your technology stack, we have the expertise to help you succeed.</p>
+                    <a href="#contact-form" class="cta-button">Get Started Today</a>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/Information-Technology-Services.png" alt="Technology Services" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="services-container">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Technology Consulting</h3>
+                    <p>Strategic technology consulting to help your business make informed decisions about digital transformation, infrastructure, and technology investments.</p>
+                    <ul class="service-features">
+                        <li>Digital Strategy Development</li>
+                        <li>Technology Roadmap Planning</li>
+                        <li>Infrastructure Assessment</li>
+                        <li>ROI Analysis</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">✍️</div>
+                    <h3>Content Creation</h3>
+                    <p>High-quality technology content creation including blog posts, whitepapers, case studies, and technical documentation tailored to your audience.</p>
+                    <ul class="service-features">
+                        <li>Technical Blog Writing</li>
+                        <li>Whitepaper Development</li>
+                        <li>Case Study Creation</li>
+                        <li>API Documentation</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Custom web development solutions using modern frameworks and best practices to create fast, secure, and scalable web applications.</p>
+                    <ul class="service-features">
+                        <li>React/Vue.js Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Progressive Web Apps</li>
+                        <li>API Integration</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile application development for iOS and Android, delivering intuitive user experiences and robust functionality.</p>
+                    <ul class="service-features">
+                        <li>iOS & Android Apps</li>
+                        <li>React Native Development</li>
+                        <li>UI/UX Design</li>
+                        <li>App Store Optimization</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Comprehensive cybersecurity services to protect your digital assets, ensure compliance, and maintain customer trust in an increasingly connected world.</p>
+                    <ul class="service-features">
+                        <li>Security Audits</li>
+                        <li>Penetration Testing</li>
+                        <li>Compliance Consulting</li>
+                        <li>Security Training</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Cloud migration, optimization, and management services to help businesses leverage the power of cloud computing for scalability and efficiency.</p>
+                    <ul class="service-features">
+                        <li>Cloud Migration</li>
+                        <li>AWS/Azure/GCP Setup</li>
+                        <li>DevOps Implementation</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                    <a href="#contact-form" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Analysis</h3>
+                        <p>We start by understanding your business goals, current technology landscape, and specific challenges through comprehensive analysis.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Strategy Development</h3>
+                        <p>Based on our analysis, we develop a tailored technology strategy aligned with your business objectives and budget constraints.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementation</h3>
+                        <p>Our expert team executes the strategy using industry best practices, ensuring quality deliverables and timely project completion.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Support & Optimization</h3>
+                        <p>We provide ongoing support, monitoring, and optimization to ensure your technology solutions continue to deliver value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Service Packages</h2>
+            <div class="pricing-container">
+                <!-- Basic Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Perfect for small businesses and startups</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 10 Blog Posts per Month</li>
+                        <li>✓ Basic Technical Support</li>
+                        <li>✓ Monthly Analytics Report</li>
+                        <li>✓ Email Support</li>
+                        <li>✓ Basic SEO Optimization</li>
+                    </ul>
+                    <a href="#contact-form" class="pricing-btn">Get Started</a>
+                </div>
+
+                <!-- Professional Package -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2,499</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Ideal for growing businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 25 Blog Posts per Month</li>
+                        <li>✓ Priority Technical Support</li>
+                        <li>✓ Weekly Analytics Report</li>
+                        <li>✓ Phone & Email Support</li>
+                        <li>✓ Advanced SEO Optimization</li>
+                        <li>✓ Social Media Management</li>
+                        <li>✓ Monthly Strategy Call</li>
+                    </ul>
+                    <a href="#contact-form" class="pricing-btn">Get Started</a>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">5,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">For large organizations</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited Blog Posts</li>
+                        <li>✓ 24/7 Dedicated Support</li>
+                        <li>✓ Real-time Analytics Dashboard</li>
+                        <li>✓ Dedicated Account Manager</li>
+                        <li>✓ Premium SEO Services</li>
+                        <li>✓ Full Social Media Management</li>
+                        <li>✓ Weekly Strategy Meetings</li>
+                        <li>✓ Custom Content Strategy</li>
+                    </ul>
+                    <a href="#contact-form" class="pricing-btn">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"TechHub transformed our digital presence with their expert content creation and SEO services. Our organic traffic increased by 300% in just 6 months!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../images/m6.png" alt="Client" loading="lazy">
+                        <div class="author-info">
+                            <h4>Michael Roberts</h4>
+                            <p>CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The web development team at TechHub delivered a stunning e-commerce platform that exceeded our expectations. Their attention to detail and support throughout the process was exceptional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../images/f1.avif" alt="Client" loading="lazy">
+                        <div class="author-info">
+                            <h4>Sarah Martinez</h4>
+                            <p>Marketing Director, RetailPro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"TechHub's cybersecurity audit helped us identify and address critical vulnerabilities. Their ongoing support gives us peace of mind knowing our data is secure."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="../images/f5.jpg" alt="Client" loading="lazy">
+                        <div class="author-info">
+                            <h4>Homiko Chen</h4>
+                            <p>CTO, SecureNet Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how our services can help you achieve your technology goals and drive growth.</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="cta-button primary">Get Free Consultation</a>
+                    <a href="contact.html" class="cta-button secondary">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechHub</h3>
+                    <p>Your trusted source for technology news, reviews, and insights.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Technology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
