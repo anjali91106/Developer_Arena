@@ -1,0 +1,312 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:#f5f7fb;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header{
+    background:white;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+/* Logo */
+
+.logo h1{
+    font-size:24px;
+    color:#667eea;
+}
+
+.tagline{
+    font-size:12px;
+    color:#777;
+}
+
+
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+
+.main-nav{
+    display:flex;
+    align-items:center;
+}
+
+.nav-list{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-link{
+    font-weight:500;
+    color:#333;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#667eea;
+}
+
+.nav-link.active{
+    color:#667eea;
+    font-weight:600;
+}
+
+/* Search button */
+
+.search-btn{
+    background:none;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* Mobile menu button */
+
+.menu-btn{
+    display:none;
+    font-size:22px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+
+/* ============================= */
+/* SEARCH BAR */
+/* ============================= */
+
+.search-bar{
+    background:#f1f3ff;
+    padding:15px 0;
+    display:none;
+}
+
+.search-bar.active{
+    display:block;
+}
+
+.search-form{
+    display:flex;
+    gap:10px;
+}
+
+.search-form input{
+    flex:1;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ddd;
+}
+
+.search-form button{
+    background:#667eea;
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+
+/* ============================= */
+/* MOBILE MENU */
+/* ============================= */
+
+.mobile-menu{
+    position:fixed;
+    top:0;
+    right:-300px;
+    width:300px;
+    height:100%;
+    background:white;
+    z-index:2000;
+    transition:0.3s;
+    padding:20px;
+    box-shadow:-5px 0 20px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.mobile-menu-close{
+    font-size:24px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.mobile-nav-list li{
+    margin-bottom:15px;
+}
+
+.mobile-nav-link{
+    font-size:18px;
+    color:#333;
+}
+
+.mobile-menu-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+}
+
+.mobile-menu-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer{
+    background:#111;
+    color:#ccc;
+    padding:60px 0 20px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-section h3,
+.footer-section h4{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-section p{
+    font-size:14px;
+}
+
+.footer-section ul li{
+    margin-bottom:8px;
+}
+
+.footer-section a{
+    color:#ccc;
+    font-size:14px;
+}
+
+.footer-section a:hover{
+    color:white;
+}
+
+/* Social icons */
+
+.social-links{
+    margin-top:10px;
+}
+
+.social-links a{
+    margin-right:10px;
+    font-size:20px;
+}
+
+/* Footer bottom */
+
+.footer-bottom{
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid #333;
+    padding-top:15px;
+    font-size:14px;
+}
+
+
+/* ============================= */
+/* BACK TO TOP */
+/* ============================= */
+
+.back-to-top{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#667eea;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    border-radius:50%;
+    font-size:18px;
+    cursor:pointer;
+    display:none;
+}
+
+.back-to-top.show{
+    display:block;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width:900px){
+
+.nav-list{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+}
