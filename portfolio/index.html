@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Soni | Portfolio</title>
+    <meta name="description" content="Exploring the intersection of web development and design.">
+    <meta name="keywords" content="Anjali Soni, Portfolio, Web Developer, React, Three.js, Design">
+    <meta name="author" content="Anjali Soni">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AS</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon theme-icon" id="themeIcon"></i>
+                </button></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">
+                Creative <span class="accent">Developer</span><br>
+                & Designer
+            </h1>
+            <p class="hero-subtitle">
+                Exploring the intersection of web development and design to create beautiful, functional digital experiences.
+            </p>
+            <a href="#projects" class="hero-cta">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="images/image2.jpeg" alt="Profile">
+                </div>
+                <div class="about-text slide-in-right">
+                    <h3>Passionate about creating digital experiences</h3>
+                    <p>
+                        I'm a creative developer with a passion for building beautiful, functional web applications. 
+                        My journey in web development started with curiosity about how things work on the internet, 
+                        and has evolved into a career focused on creating exceptional user experiences.
+                    </p>
+                    <p>
+                        I specialize in modern web technologies and have a keen eye for design. 
+                        Whether it's building complex applications or crafting stunning user interfaces, 
+                        I approach every project with enthusiasm and attention to detail.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new design trends, 
+                        contributing to open-source projects, or learning about emerging technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">ECart Shop</h3>
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A full-featured e-commerce platform with shopping cart, product management, 
+                        user authentication, and secure checkout functionality.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anjali91106/ecart-shop" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://e-cart-shop-theta.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive analytics dashboard built with Next.js featuring real-time data 
+                        visualization, responsive design, and interactive charts.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Backend</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anjali91106/dashboard-project-withNextjs.git" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://dashboard-project-with-nextjs.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">YouTube Clone</h3>
+                        <div class="project-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A feature-rich YouTube clone with video uploading, playback controls, 
+                        search functionality, and user interactions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Nodejs</span>
+                        <span class="tech-tag">ExpressJs</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anjali91106/YouTube_Clone" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Eco Habit Hub</h3>
+                        <div class="project-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An environmental tracking application that helps users build sustainable habits. 
+                        Features carbon footprint tracking, eco-challenges, and community engagement.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React - HTMLPages</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JSON Data</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Architas45/eco-habit-hub" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">SkillSync</h3>
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A skill development platform that helps users track learning progress, 
+                        set goals, and connect with mentors for personalized learning paths.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vanila.js</span>
+                        <span class="tech-tag">HTML-CSS-js</span>
+                        <span class="tech-tag">Nodejs-ExpressJs</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anjali91106/SkillSync" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://skillsync-3-hgmq.onrender.com/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">ShoppyGlobe E-commerce</h3>
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A modern e-commerce platform with comprehensive shopping features, 
+                        secure payment processing, and user-friendly interface.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Product API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anjali91106/-ShoppyGlobe-E-commerce-Application.git" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://shoppy-globe-e-commerce-application-ten.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">Frontend Development</h3>
+                    <p class="skill-level">React, Next.js, JavaScript, CSS3</p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Backend Development</h3>
+                    <p class="skill-level">Node.js, Express, Python, MongoDB</p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-name">Design</h3>
+                    <p class="skill-level">UI/UX Design</p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Mobile Development</h3>
+                    <p class="skill-level">Responsive Design</p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-name">Tools & DevOps</h3>
+                    <p class="skill-level">Git, VS Code, Postman, ThunderClient, Render, Vercel</p>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">Databases</h3>
+                    <p class="skill-level">SQL, NoSQL, PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Certifications & Achievements</h2>
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <div class="gallery-track" id="certificatesGallery">
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Next Wave Hackathon</h3>
+                                <p class="certificate-issuer">Next Wave Technologies</p>
+                                <p class="certificate-date">Participation Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/Next-Wave-HackA-Thon-certificate.png" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Dashboard App Development</h3>
+                                <p class="certificate-issuer">Training Completion - Project Based</p>
+                                <p class="certificate-date">Professional Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/dashboard-app-certificate.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Full Stack Development Placement Gurantee Course</h3>
+                                <p class="certificate-issuer">Internshala</p>
+                                <p class="certificate-date">Professional Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/CAN_35319451_4564692.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Capstone Project</h3>
+                                <p class="certificate-issuer">Project Completion</p>
+                                <p class="certificate-date">Project Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/Build Your Own Capstone Project Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Full Stack Development</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Professional Training</p>
+                                <div class="certificate-links">
+                                    <a href="images/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">MERN Stack Development</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Professional Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/Mastering Node.js, Express.js and MongoDB Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Data Structures & Algorithms</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">DSA Certificate I</p>
+                                <div class="certificate-links">
+                                    <a href="images/Cracking the Code_ Data Structures and Algorithms (DSA) in JavaScript - I Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Advanced DSA</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">DSA Certificate II</p>
+                                <div class="certificate-links">
+                                    <a href="images/Cracking the Code_ Data Structures and Algorithms (DSA) in JavaScript - II Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Modern React Applications</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Professional Certificate</p>
+                                <div class="certificate-links">
+                                    <a href="images/Building Modern Web Applications Using React Training - Certificate of Completion (1).pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Git & GitHub</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Internshala</p>
+                                <div class="certificate-links">
+                                    <a href="images/Git and GitHub_ Mastering Version Control Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">HTML & CSS Design</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Web Design Certificate from Internshala</p>
+                                <div class="certificate-links">
+                                    <a href="images/Designing Web Pages Using HTML and CSS Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item certificate-card fade-in">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Interactive JavaScript</h3>
+                                <p class="certificate-issuer">Training Completion</p>
+                                <p class="certificate-date">Web Development Certificate from Internshala</p>
+                                <div class="certificate-links">
+                                    <a href="images/Developing Interactive Websites with JavaScript Training - Certificate of Completion.pdf" class="certificate-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-btn gallery-prev" id="certificatesPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-btn gallery-next" id="certificatesNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="gallery-indicators" id="certificatesIndicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content fade-in">
+                <p class="contact-text">
+                    I'm always interested in hearing about new projects and opportunities. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:anjalisoni86904@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Anjali,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you." class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                    <a href="https://github.com/anjali91106/" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/anjali-soni-33a999333/" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                    <p>Connect on Email  anjalisoni86904@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Anjali Soni. All rights reserved.</p>
+            <p>Built with passion and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
