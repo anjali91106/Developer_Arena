@@ -58,7 +58,7 @@ Then visit: `http://localhost:8000`
 # Download all files from weather-app folder
 
 # Option B: Clone Repository (if available)
-git clone https://github.com/anjali91106/Developer_Arena/weather-app
+git clone https://github.com/anjali91106/Developer_Arena/
 cd weather-app
 
 # Option C: Copy Files
