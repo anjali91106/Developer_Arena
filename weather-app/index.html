@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Today + 5 Days</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Weather Forecast</h1>
+            <p>Today's weather + 5-day forecast</p>
+            
+            <!-- User Preferences -->
+            <div class="preferences">
+                <div class="preference-item">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="unitToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>°F</span>
+                </div>
+                <div class="preference-item">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name (e.g., London, New York, Tokyo)" />
+                <button id="searchBtn">
+                    <i class="fas fa-search"></i> Get Forecast
+                </button>
+                <button id="locationBtn" class="location-btn">
+                    <i class="fas fa-location-dot"></i> Use Location
+                </button>
+            </div>
+            <div id="errorMsg" class="error"></div>
+        </div>
+
+        <!-- Favorites and Recent Searches -->
+        <div class="sidebar">
+            <div class="favorites-section">
+                <h3><i class="fas fa-heart"></i> Favorites</h3>
+                <div id="favoritesContainer" class="favorites-list"></div>
+            </div>
+            
+            <div class="recent-section">
+                <h3><i class="fas fa-history"></i> Recent Searches</h3>
+                <div id="recentSearchesContainer" class="recent-list"></div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading weather forecast...
+        </div>
+
+        <!-- Today's Weather Section -->
+        <section id="todayWeather" class="today-section hidden">
+            <h2>Today's Weather</h2>
+            <div class="today-card">
+                <div class="today-left">
+                    <div class="today-icon">
+                        <i id="todayIcon" class="fas"></i>
+                    </div>
+                    <div class="today-main">
+                        <div class="today-temp" id="todayTemp">--°C</div>
+                        <div class="today-desc" id="todayDesc">--</div>
+                    </div>
+                </div>
+                <div class="today-right">
+                    <div class="today-details">
+                        <div class="detail-item">
+                            <span>Feels like:</span>
+                            <span id="todayFeels">--°C</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Humidity:</span>
+                            <span id="todayHumidity">--%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Wind:</span>
+                            <span id="todayWind">-- km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Pressure:</span>
+                            <span id="todayPressure">-- hPa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Day Forecast -->
+        <section id="forecastSection" class="forecast-section hidden">
+            <h2>5-Day Forecast</h2>
+            <div id="forecastContainer" class="forecast-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
