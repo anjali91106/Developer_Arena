@@ -3,6 +3,7 @@
   gap: 10px;
   margin-bottom: 30px;
   animation: fadeIn 0.8s ease-in 0.2s both;
+  position: relative;
 }
 
 .input {
@@ -20,6 +21,17 @@
   border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
   transform: translateY(-2px);
+}
+
+.inputError {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+  animation: shake 0.5s ease-in-out;
+}
+
+.inputError:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
 }
 
 .input::placeholder {
@@ -69,10 +81,47 @@
   transform: translateY(0);
 }
 
+.errorMessage {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  color: #e74c3c;
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideInUp 0.3s ease-out;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 5px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
