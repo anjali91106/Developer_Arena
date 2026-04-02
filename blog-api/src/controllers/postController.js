@@ -13,6 +13,7 @@ const postSchema = Joi.object({
 // Get all posts (public)
 const getAllPosts = async (req, res, next) => {
   try {
+    console.log('Getting all posts...');
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
@@ -25,6 +26,7 @@ const getAllPosts = async (req, res, next) => {
     
     const total = await Post.countDocuments();
     
+    console.log(`Found ${posts.length} posts`);
     res.json({
       posts,
       pagination: {
@@ -35,6 +37,7 @@ const getAllPosts = async (req, res, next) => {
       }
     });
   } catch (err) {
+    console.error('Error in getAllPosts:', err);
     next(err);
   }
 };

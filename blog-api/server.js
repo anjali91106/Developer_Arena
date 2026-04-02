@@ -35,8 +35,16 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/blog-api'
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.error('MongoDB connection error:', err));
+.then(() => {
+  console.log('✅ MongoDB connected successfully');
+  console.log('📍 Database:', process.env.MONGODB_URI || 'mongodb://localhost:27017/blog-api');
+  console.log('🌍 Environment:', process.env.NODE_ENV || 'development');
+})
+.catch(err => {
+  console.error('❌ MongoDB connection error:', err);
+  console.error('📍 Trying to connect to:', process.env.MONGODB_URI || 'mongodb://localhost:27017/blog-api');
+  process.exit(1);
+});
 
 // Routes
 app.use('/api/posts', postRoutes);
