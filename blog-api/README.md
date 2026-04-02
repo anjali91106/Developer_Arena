@@ -295,10 +295,10 @@ NODE_ENV=development
 Import the provided Postman collection to test all endpoints.
 
 ### Postman Collection Blog-Api
-[text](https://anjalisoni86904-5413349.postman.co/workspace/Anjali-soni's-Workspace~1ea08674-c6ee-4e81-82ef-94c0fcfcdc95/collection/51607129-29b68448-2b65-4b58-b0d2-cd95a0576129?action=share&creator=51607129)
+[https://anjalisoni86904-5413349.postman.co/workspace/Anjali-soni's-Workspace~1ea08674-c6ee-4e81-82ef-94c0fcfcdc95/collection/51607129-29b68448-2b65-4b58-b0d2-cd95a0576129?action=share&creator=51607129](https://anjalisoni86904-5413349.postman.co/workspace/Anjali-soni's-Workspace~1ea08674-c6ee-4e81-82ef-94c0fcfcdc95/collection/51607129-29b68448-2b65-4b58-b0d2-cd95a0576129?action=share&creator=51607129)
 
 ## 🔧 Development
-[text](https://developer-arena.onrender.com/)
+[https://developer-arena.onrender.com/](https://developer-arena.onrender.com/)
 
 ### Adding New Endpoints
 
