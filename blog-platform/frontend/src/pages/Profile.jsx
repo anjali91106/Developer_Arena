@@ -8,7 +8,6 @@ const Profile = () => {
   const { userId } = useParams();
   const dispatch = useDispatch();
   
-  const { user: currentUser } = useSelector((state) => state.auth);
   const { loading } = useSelector((state) => state.posts);
   const [profileData, setProfileData] = useState(null);
   const [userPosts, setUserPosts] = useState([]);
