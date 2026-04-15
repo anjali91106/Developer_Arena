@@ -2,6 +2,11 @@
 
 A modern, production-ready full-stack blogging platform built with React, Node.js, Express, and MongoDB. Features user authentication, CRUD operations for blog posts, nested comments, and a beautiful responsive UI with Tailwind CSS.
 
+## 🚀 Live Demo
+
+- **Frontend**: https://developer-arena.vercel.app/
+- **Backend API**: https://blogspace-fzlh.onrender.com/api
+
 ## Features
 
 ### Authentication
@@ -286,8 +291,6 @@ The frontend will be running on `http://localhost:3000`
 - Visit `/dashboard` to see your posts
 - Edit or delete your own posts
 - Update your profile in `/settings`
-
-## Deployment
 
 ### Backend Deployment (Render/Heroku)
 1. Set environment variables in your hosting platform
