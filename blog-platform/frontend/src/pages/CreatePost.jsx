@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { createPost, clearError } from '../redux/slices/postsSlice';
+import { createPost } from '../redux/slices/postsSlice';
 import BackButton from '../components/BackButton';
 
 const CreatePost = () => {

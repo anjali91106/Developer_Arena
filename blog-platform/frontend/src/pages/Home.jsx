@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { fetchPosts, searchPosts } from '../redux/slices/postsSlice';
 import PostCard from '../components/PostCard';
 
